@@ -84,7 +84,7 @@ UI.prototype.mostrarMensaje=(mensaje,tipo)=>{
 
 UI.prototype.mostrarResultado=(seguro,total)=>{
     //crear el resultado
-    const {marca,year,tiop}=seguro;
+    const {marca,year,tipo}=seguro;
     let textmarca;
      switch(seguro.marca) {
           case '1':
