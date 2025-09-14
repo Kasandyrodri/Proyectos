@@ -99,7 +99,7 @@ class UI{
             }
         }
         actualizarRestante(restante){
-            document.querySelector('#restante'.textContent=restante)
+            document.querySelector('#restante').textContent=restante
         }
         comprobarPresupuesto(presupuestoObj){
             const{presupuesto,restante}=presupuestoObj;
