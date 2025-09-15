@@ -6,7 +6,7 @@ const fechaInput=document.querySelector('#fecha')
 const sintomasInput=document.querySelector('#sintomas')
 
 const formulario=document.querySelector('#nueva-cita')
-const formularioInput = document.querySelector('#nueva-cita input[type="submit"]')
+const formularioInput = document.querySelector('#nueva-cita [type="submit"]')
 const contenedorCitas=document.querySelector('#citas')
 
 
@@ -97,6 +97,11 @@ class AdminCitas{
         while(contenedorCitas.firstChild){
             contenedorCitas.removeChild(contenedorCitas.firstChild)
 
+        }
+        //si hy citas
+        if(this.citas.length===0){
+            contenedorCitas.innerHTML= `<p>No hay registros</p>`
+            return
         }
 
         //generando las citas
